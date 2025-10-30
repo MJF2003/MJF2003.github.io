@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Projects — Michael Fahey</title>
+  <meta name="description" content="Projects and case studies — Michael Fahey">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="favicon.ico">
+</head>
+<body>
+  <div class="container" role="main">
+    <header class="header">
+      <div class="avatar">
+        <img src="img/portrait.png" alt="Michael Fahey">
+      </div>
+      <div class="header-info">
+        <h1>Projects</h1>
+        <p class="meta">Selected work — telemetry, embedded software, system validation</p>
+      </div>
+    </header>
+
+    <nav class="nav">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="projects.html" class="nav-link active">Projects</a>
+      <a href="Michael-Fahey-CV.pdf" class="nav-link" download>Download CV (PDF)</a>
+    </nav>
+
+    <main class="layout projects-layout">
+      <!-- Project: Digital Driver Dashboard -->
+      <section class="card project">
+        <h2>Digital Driver Dashboard</h2>
+        <p class="small"><strong>Role:</strong> Developer — C++, Embedded Software • <strong>Tech:</strong> C++, CAN, Raspberry Pi, Multithreading</p>
+        <div class="project-grid">
+          <img src="images/dashboard-1.jpg" alt="Dashboard image">
+          <div class="project-body">
+            <p>Developed a high-frequency (60Hz) real-time driver dashboard that decodes CAN bus signals, structures telemetry for concurrent access and displays key metrics for driver feedback and rapid diagnostics.</p>
+            <ul>
+              <li>Implemented a multithreaded C++ consumer for CAN frames with lock-minimised concurrent data structures to feed the UI at 60Hz.</li>
+              <li>Built an on-vehicle UI optimized for readability under motion and low-latency updates.</li>
+              <li>Created offline test harnesses to simulate CAN traffic for robust validation away from the vehicle.</li>
+            </ul>
+            <p class="small"><strong>Impact:</strong> Enabled live driver feedback and rapid fault diagnosis during testing sessions; shortened debugging cycles.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Project: CAN Testbench -->
+      <section class="card project">
+        <h2>CAN Testbench</h2>
+        <p class="small"><strong>Role:</strong> Developer — Python, Test Automation • <strong>Tech:</strong> Python, SocketCAN, pytest</p>
+        <div class="project-grid">
+          <img src="images/can-1.jpg" alt="CAN testbench">
+          <div class="project-body">
+            <p>Built a Python-based testbench to simulate CAN traffic and validate telemetry consumer code offline, enabling faster development and safer on-car testing.</p>
+            <ul>
+              <li>Designed scenario-based CAN traffic generators and unit-tests to exercise dashboard and data consumers.</li>
+              <li>Implemented logging/analysis tools to replay test sessions and trace data issues.</li>
+              <li>Used pytest-driven tests to ensure regressions were caught before on-vehicle validation.</li>
+            </ul>
+            <p class="small"><strong>Impact:</strong> Accelerated development cycles and reduced integration issues during track testing.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Project: HV Safety & Validation -->
+      <section class="card project">
+        <h2>HV Safety & Validation</h2>
+        <p class="small"><strong>Role:</strong> Lead — Electrical validation, process design</p>
+        <div class="project-grid">
+          <img src="images/hv-1.jpg" alt="HV safety">
+          <div class="project-body">
+            <p>Led HV validation and developed safety procedures for battery and HV distribution on the electric vehicle. Documentation and processes were commended by FSUK scrutineers.</p>
+            <ul>
+              <li>Authored validation procedures for battery assembly, insulation checks and safety interlocks.</li>
+              <li>Trained electrical safety officers and established pre-test checklists.</li>
+              <li>Coordinated testing sessions with data capture for verification.</li>
+            </ul>
+            <p class="small"><strong>Impact:</strong> Enabled safe test sessions and produced documentation for team continuity.</p>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <aside class="sidebar">
+      <section class="card contact">
+        <h2>Contact</h2>
+        <div><strong>Email</strong><br><a href="mailto:michaelfahey42@gmail.com" target="_blank">michaelfahey42@gmail.com</a></div>
+        <div><strong>Phone</strong><br>+44 7535 034860</div>
+        <div><strong>LinkedIn</strong><br><a href="https://www.linkedin.com/in/mike-fahey-64077519a/" target="_blank">linkedin.com/in/mike-fahey-64077519a</a></div>
+      </section>
+
+      <footer class="footer">© Michael Fahey — Projects</footer>
+    </aside>
+  </div>
+
+</body>
+</html>

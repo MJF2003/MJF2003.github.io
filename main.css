@@ -12,9 +12,11 @@
 
 body{
 	font-family: 'Montserrat';
-	font-variant: small-caps;
-	font-weight: 200;
+	font-weight: 300;
 	background-color: var(--c2);
+	justify-content: center;
+	align-items: center;
+	
 }
 
 
@@ -30,7 +32,7 @@ body{
 }
 
 .blocksec{
-	width: 100%;
+	width: 70%;
 	padding: 20px;
 	display: flex;
 }
@@ -50,7 +52,7 @@ body{
 
 .navbar{
 	
-	padding: 0.3rem;
+	padding: 0.4rem;
 }
 
 .footer{

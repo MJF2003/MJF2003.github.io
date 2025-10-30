@@ -1,96 +1,115 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
 <head>
-	<meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Home - Michael Fahey</title>
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-	<link rel="stylesheet" type="text/css" href="main.css" />
-	
-	<script src="script.js"></script>
-	
-
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Michael Fahey — CV & Projects</title>
+  <meta name="description" content="Michael Fahey — Software & Electronics Engineer. CV, projects and contact.">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="favicon.ico">
 </head>
 <body>
-	<nav class="navbar dark navbar-expand-lg sticky-top navbar-dark">
-		<a class="navbar-brand" href="index.html">MF</a>
-		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-			<span class="navbar-toggler-icon"></span>
-		</button>
-		<div class="navbox collapse navbar-collapse " id="navbarTogglerDemo02">
-			<ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-				<li class="nav-item active">
-					<a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="about.html">About</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="contact.html">Contact Me</a>
-				</li>
-				
-			</ul>
-		</div>
-	</nav>
+  <div class="container" role="main">
+    <header class="header">
+      <div class="avatar">
+        <img src="img/portrait.png" alt="Michael Fahey">
+      </div>
+      <div class="header-info">
+        <h1>Michael Fahey</h1>
+        <p class="meta">Software & Electronics Engineer — MSc Robotics (ongoing) • Computer Science (First Class)</p>
+        <p class="meta contact">michaelfahey42@gmail.com • +44 7535 034860 • <a href="https://www.linkedin.com/in/mike-fahey-64077519a/" target="_blank">linkedin.com/in/mike-fahey-64077519a</a></p>
+      </div>
+    </header>
 
-	<div class="block">
-		<img class="fillimg" src="../img/skyscrapers.webp" alt="Skyscraper"/>
-	</div>
+    <nav class="nav">
+      <a href="index.html" class="nav-link active">Home</a>
+      <a href="projects.html" class="nav-link">Projects</a>
+      <a href="Michael Fahey.pdf" class="nav-link" download>Download CV (PDF)</a>
+    </nav>
 
-	<div class="blocksec light">
-		<div>
-			<h1>Michael Fahey</h1>
-			<h5>Student of Computer Science</h5>
-		</div>
-		<div>
-			<img src="../img/portrait.webp" alt="Me" style="max-width:100px;max-height:100px;border-radius:50%;margin-left:10px;filter:grayscale(70%);"></img>
-		</div>
-	</div>
+    <main class="layout">
+      <section class="card">
+        <h2>Profile</h2>
+        <p class="small">I’m a software and electronics engineer with hands-on experience in vehicle telemetry, CAN-based systems, and real-time tools developed through Formula Student projects and university research. I enjoy building robust, high-performance software that empowers engineers and drivers to make faster, data-driven decisions.</p>
+      </section>
 
-	<div class="blocksec dark">
-		<div>
-		<p>
-			<h1>Who am I?</h1>
-			I am a student of Computer Science in the UK, currently studying at 6th Form level. I have a wide and general interest in all things to do with technology and I enjoy imparting my enthusiam for computer science on to others.
-			<br/><br/>
-			I have good experience and competency in web development and Python. I also have an elementary grasp of C# and JavaScript.  
-		</p>
-		</div>
-	</div>
+      <section class="card">
+        <h2>Education</h2>
+        <div class="two-cols">
+          <div>
+            <strong>University of Manchester</strong><br>
+            <span class="meta">MSc Robotics — Sept 2025–Sept 2026 (expected)</span>
+            <p class="small">Exploring ROS2, manipulators, autonomous mobile robots, control theory and actuator kinematics.</p>
+          </div>
+          <div>
+            <strong>BSc (Hons) Computer Science</strong><br>
+            <span class="meta">First Class (75.4%) — Sept 2022–June 2025</span>
+            <p class="small">Specialised in software development (C++, Python), data science, computer vision and microcontroller programming.</p>
+          </div>
+        </div>
+      </section>
 
-	<div class="blocksec light">
-		<div>
-		<p>
-			<h1>What I do?</h1>
-			I currently offer the following services:
-			<ul>
-				<li>Website Edits</li>
-			</ul>
-			I hope to be able to offer soon: 
-			<ul>
-				<li>Informational Website Building</li>
-				<li>Basic Python Training</li>
-			</ul>
-		</p>
-		</div>
-	</div>       
+      <section class="card">
+        <h2>Experience</h2>
 
-	<div class="footer">
-		<i>Michael Fahey &copy; <span id="year"></span></i>
-	</div>
+        <strong>Manchester Stinger Motorsports — Team Leader</strong>
+        <div class="meta">Jul 2024 – Present</div>
+        <ul>
+          <li>Directed a 150-member team to deliver the university’s first electric vehicle to FSUK, achieving HV system compliance and enabling competitive testing.</li>
+          <li>Integrated CAN-based telemetry and led development of data workflows for performance analysis and fault diagnosis.</li>
+          <li>Secured data acquisition sponsorship and defined electrical safety processes praised by scrutineers.</li>
+        </ul>
 
+        <strong>Electrical Sub-team Leader</strong>
+        <div class="meta">Jul 2023 – Jul 2024</div>
+        <ul>
+          <li>Secured Cosworth data logger sponsorship and used logged data to influence vehicle design and setup.</li>
+          <li>Standardised wiring harness design and increased focus on CAN systems, reducing harness weight and improving signal reliability.</li>
+        </ul>
 
+        <strong>Electrical Engineer</strong>
+        <div class="meta">Sept 2022 – Jul 2023</div>
+        <ul>
+          <li>Designed custom wiring harness connecting 20+ sensors to an ECU, enabling real-time telemetry for engine tuning and diagnostics.</li>
+        </ul>
+      </section>
 
+      <section class="card">
+        <h2>Awards & Certifications</h2>
+        <ul>
+          <li>C&G Level 2 — Safe Maintenance of Electric & Hybrid Vehicles (Dec 2023)</li>
+          <li>C&G Level 3 — Component Removal & Replacement (Dec 2023)</li>
+          <li>Craig Dawson Award — Most Valuable Team Member, FSUK 2023</li>
+        </ul>
+      </section>
+    </main>
 
+    <aside class="sidebar">
+      <section class="card contact">
+        <h2>Contact</h2>
+        <div><strong>Email</strong><br><a href="mailto:michaelfahey42@gmail.com" target="_blank">michaelfahey42@gmail.com</a></div>
+        <div><strong>Phone</strong><br>+44 7535 034860</div>
+        <div><strong>LinkedIn</strong><br><a href="https://www.linkedin.com/in/mike-fahey-64077519a/" target="_blank">linkedin.com/in/mike-fahey-64077519a</a></div>
+      </section>
 
-	<script>
-	document.getElementById("year").innerHTML = new Date().getFullYear();
-	</script>
-	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+      <section class="card">
+        <h2>Skills</h2>
+        <div class="skill-list">
+          <span class="skill">Python</span>
+          <span class="skill">C++</span>
+          <span class="skill">NumPy / Pandas</span>
+          <span class="skill">Matplotlib</span>
+          <span class="skill">CAN bus</span>
+          <span class="skill">Cosworth tools</span>
+          <span class="skill">Git</span>
+          <span class="skill">SolidWorks</span>
+          <span class="skill">Raspberry Pi</span>
+        </div>
+      </section>
+
+      <footer class="footer">© Michael Fahey</footer>
+    </aside>
+  </div>
 
 </body>
 </html>
-
-
