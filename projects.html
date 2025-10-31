@@ -15,8 +15,9 @@
         <img src="img/portrait.png" alt="Michael Fahey">
       </div>
       <div class="header-info">
-        <h1>Projects</h1>
-        <p class="meta">Selected work — telemetry, embedded software, system validation</p>
+        <h1>Mike Fahey - Projects</h1>
+        <p class="meta">Robotic Systems Engineer — MSc Robotics (ongoing) • BSc Computer Science (First Class)</p>
+        <p class="meta contact">michaelfahey42@gmail.com • <a href="https://www.linkedin.com/in/mike-fahey-64077519a/" target="_blank">linkedin.com/in/mike-fahey-64077519a</a></p>
       </div>
     </header>
 
@@ -30,13 +31,15 @@
       <!-- Project: Digital Driver Dashboard -->
       <section class="card project">
         <h2>Digital Driver Dashboard</h2>
-        <p class="small"><strong>Role:</strong> Developer — C++, Embedded Software • <strong>Tech:</strong> C++, CAN, Raspberry Pi, Multithreading</p>
+        <p class="small"><strong>Undergraduate Final Year Project</strong> - Skills Exercised: C++, CAN, Raspberry Pi, SolidWorks</p>
         <div class="project-grid">
-          <img src="images/dashboard-1.jpg" alt="Dashboard image">
+          <iframe width="420" height="315"
+src="https://www.youtube.com/embed/8GfMNtTtUR8">
+</iframe>
           <div class="project-body">
-            <p>Developed a high-frequency (60Hz) real-time driver dashboard that decodes CAN bus signals, structures telemetry for concurrent access and displays key metrics for driver feedback and rapid diagnostics.</p>
+            <p>Developed a high-frequency (60Hz) real-time driver dashboard that decodes CAN bus signals, restructures telemetry data and displays key metrics for driver feedback and rapid diagnostics.</p>
             <ul>
-              <li>Implemented a multithreaded C++ consumer for CAN frames with lock-minimised concurrent data structures to feed the UI at 60Hz.</li>
+              <li>Implemented a multithreaded C++ program, reading from an existing vehicle CAN bus, to feed the UI at 60Hz.</li>
               <li>Built an on-vehicle UI optimized for readability under motion and low-latency updates.</li>
               <li>Created offline test harnesses to simulate CAN traffic for robust validation away from the vehicle.</li>
             </ul>
@@ -47,36 +50,32 @@
 
       <!-- Project: CAN Testbench -->
       <section class="card project">
-        <h2>CAN Testbench</h2>
-        <p class="small"><strong>Role:</strong> Developer — Python, Test Automation • <strong>Tech:</strong> Python, SocketCAN, pytest</p>
+        <h2>MAN24 Wiring Harness</h2>
+        <p class="small"><strong>Formula Student IC Electrical Sub-team Leader</strong> - Skills Exercised: Electrical System Design, Fault Finding</p>
         <div class="project-grid">
-          <img src="images/can-1.jpg" alt="CAN testbench">
+          <img src="img/wiring_harness.jpg" alt="CAN testbench">
           <div class="project-body">
-            <p>Built a Python-based testbench to simulate CAN traffic and validate telemetry consumer code offline, enabling faster development and safer on-car testing.</p>
+            <p>Designed a full club-spec wiring harness for the 2024 FS car running a Yamaha R6 engine.</p>
             <ul>
-              <li>Designed scenario-based CAN traffic generators and unit-tests to exercise dashboard and data consumers.</li>
-              <li>Implemented logging/analysis tools to replay test sessions and trace data issues.</li>
-              <li>Used pytest-driven tests to ensure regressions were caught before on-vehicle validation.</li>
+              <li>Established standards for connectors, wire coverings & power distribution</li>
+              <li>Implemented data logging to replay test sessions and trace faults.</li>
+              <li>Planned, documented and built the harness from scratch, accounting for appropriate lengths, future servicability and abrasion resistance.</li>
             </ul>
-            <p class="small"><strong>Impact:</strong> Accelerated development cycles and reduced integration issues during track testing.</p>
+            <p class="small"><strong>Impact:</strong> Passed all electrical inspection at FSUK 2024 and ran engine for a number of future tuning sessions</p>
           </div>
         </div>
       </section>
 
       <!-- Project: HV Safety & Validation -->
       <section class="card project">
-        <h2>HV Safety & Validation</h2>
-        <p class="small"><strong>Role:</strong> Lead — Electrical validation, process design</p>
+        <h2>High Voltage Battery Pack</h2>
+        <p class="small"><strong>Formula Student Electrical Safety Officer</strong> - Skills Exercised: HV Safe Work, Electrical System Design</p>
         <div class="project-grid">
-          <img src="images/hv-1.jpg" alt="HV safety">
+          <img src="img/battery.jpeg" alt="HV safety">
           <div class="project-body">
-            <p>Led HV validation and developed safety procedures for battery and HV distribution on the electric vehicle. Documentation and processes were commended by FSUK scrutineers.</p>
-            <ul>
-              <li>Authored validation procedures for battery assembly, insulation checks and safety interlocks.</li>
-              <li>Trained electrical safety officers and established pre-test checklists.</li>
-              <li>Coordinated testing sessions with data capture for verification.</li>
-            </ul>
-            <p class="small"><strong>Impact:</strong> Enabled safe test sessions and produced documentation for team continuity.</p>
+            <p>Built the high voltage battery for the University of Manchester's first student built electric car. Collaborated with two others to construct, wire and test safety circuits, whilst following safe working practices for high voltage.</p>
+            
+            <p class="small"><strong>Impact:</strong> Enabled safe development of the most complex component of the electric vehicle.</p>
           </div>
         </div>
       </section>
@@ -87,7 +86,6 @@
       <section class="card contact">
         <h2>Contact</h2>
         <div><strong>Email</strong><br><a href="mailto:michaelfahey42@gmail.com" target="_blank">michaelfahey42@gmail.com</a></div>
-        <div><strong>Phone</strong><br>+44 7535 034860</div>
         <div><strong>LinkedIn</strong><br><a href="https://www.linkedin.com/in/mike-fahey-64077519a/" target="_blank">linkedin.com/in/mike-fahey-64077519a</a></div>
       </section>
 
